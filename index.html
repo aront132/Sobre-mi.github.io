@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/encabezado.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-glass">
+        <div class="container">
+    
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <span class="neon-text fw-bold">Aaron Taco V.</span>
+            </a>
+    
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="fa-solid fa-bars-staggered text-white"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+    
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-neon active" href="#">
+                            <i class="fas fa-home small-icon"></i> Inicio
+                        </a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-neon" href="pages/proyectos.html">
+                            <i class="fas fa-code small-icon"></i> Proyectos
+                        </a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-neon" href="pages/avance-de-estudio.html">
+                            <i class="fas fa-graduation-cap small-icon"></i> Estudios
+                        </a>
+                    </li>
+    
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-sm btn-neon-nav" href="pages/Contacto.html">
+                            Contacto <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="d-flex align-items-center min-vh-100 text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-3 fw-bold text-white mb-3">Hola, soy <span class="neon-text">Aaron Abel Taco
+                            Vargas</span>
+                    </h1>
+                    <h3 class="text-white opacity-75 mb-4">Desarrollador Web & UI Designer</h3>
+                    <p class="lead text-white opacity-50 mb-5">Diseño experiencias digitales con estilo futurista.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="pages/proyectos.html" class="btn btn-neon btn-lg px-5">Ver Proyectos</a>
+                        <a href="pages/Contacto.html" class="btn btn-outline-light btn-lg px-5">Contacto</a>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center">
+                    <div class="img-glow">
+                        <img src="img/ss.jpg" alt="Foto de perfil" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-white mb-5 neon-text">Habilidades</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="text-white mb-3">E-Commerce</h4>
+                        <p class="text-white opacity-50">Plataforma de ventas online creada con React y Node.js.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="text-white mb-3">Dashboard App</h4>
+                        <p class="text-white opacity-50">Panel de control administrativo con gráficos en tiempo real.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="text-white mb-3">Landing Page</h4>
+                        <p class="text-white opacity-50">Página de aterrizaje optimizada para alta conversión.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="glass-card p-5">
+                        <h2 class="text-center text-white mb-4">Escríbeme</h2>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text"
+                                    class="form-control bg-transparent text-center text-white border-secondary"
+                                    placeholder="Nombre">
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="email" class="form-control bg-transparent text-center border-secondary"
+                                    placeholder="Email">
+                            </div>
+                            <button type="submit" class="btn btn-neon w-100">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="py-5 position-relative z-2">
+        <div class="container">
+            <h2 class="text-center text-white mb-5 neon-text display-5 fw-bold">Sobre mi</h2>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="glass-card p-4 p-lg-5">
+
+                        <h3 class="text-white mb-3" style="font-family: 'Orbitron', sans-serif;">
+                            <i class="fas fa-user-astronaut me-2 text-primary"></i>¿Quién soy?
+                        </h3>
+
+                        <p class="text-white opacity-75 mb-4">
+                            Soy estudiante de <strong>Ingeniería de Software</strong>, actualmente forjando mi camino
+                            para convertirme en un Arquitecto de Soluciones Digitales. Mi enfoque no es solo escribir
+                            código, sino
+                            <span class="text-info">crear experiencias escalables y eficientes</span>. Me apasiona
+                            deconstruir problemas complejos y ensamblarlos en interfaces limpias y funcionales.
+                        </p>
+
+                        <div class="mb-4">
+                            <h5 class="text-white fw-bold border-bottom border-secondary pb-2 d-inline-block">
+                                <i class="fas fa-rocket me-2 text-warning"></i>Mis Aspiraciones
+                            </h5>
+                            <p class="text-white opacity-75 small mt-2">
+                                Aspiro a liderar equipos de desarrollo Full-Stack en proyectos de alto impacto
+                                tecnológico. Mi meta es dominar la arquitectura en la nube y la inteligencia artificial
+                                aplicada a la web, llevando la innovación peruana al estándar global.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white fw-bold mb-3"><i class="fas fa-gamepad me-2 text-success"></i>Offline
+                                Mode</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span
+                                    class="badge bg-transparent border border-secondary text-white rounded-pill px-3 py-2">
+                                    <i class="fas fa-laptop-code me-1"></i> Tech Enthusiast
+                                </span>
+                                <span
+                                    class="badge bg-transparent border border-secondary text-white rounded-pill px-3 py-2">
+                                    <i class="fas fa-ghost me-1"></i> Gaming Competitivo
+                                </span>
+                                <span
+                                    class="badge bg-transparent border border-secondary text-white rounded-pill px-3 py-2">
+                                    <i class="fas fa-music me-1"></i> Música & Flow
+                                </span>
+                                <span
+                                    class="badge bg-transparent border border-secondary text-white rounded-pill px-3 py-2">
+                                    <i class="fas fa-brain me-1"></i> Aprendizaje Continuo
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <h4 class="text-white mb-4 neon-text">Progreso de habilidades</h4>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between text-white mb-1">
+                                <span>Frontend (React/Vue)</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                                <div class="progress-bar"
+                                    style="width: 20%; background-color: var(--primary-color); box-shadow: 0 0 10px var(--primary-color);">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between text-white mb-1">
+                                <span>Backend & APIs</span>
+                                <span>39%</span>
+                            </div>
+                            <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                                <div class="progress-bar"
+                                    style="width: 30%; background-color: #26c6da; box-shadow: 0 0 10px #26c6da;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between text-white mb-1">
+                                <span>UI/UX & Diseño</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                                <div class="progress-bar"
+                                    style="width: 70%; background-color: #ff0055; box-shadow: 0 0 10px #ff0055;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between text-white mb-1">
+                                <span>Ingeniería de Software</span>
+                                <span>En Proceso</span>
+                            </div>
+                            <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                    style="width: 50%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-neon pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="fw-bold mb-3" style="font-family: 'Orbitron', sans-serif; color: white;">
+                        <i class="fas fa-code me-2" style="color: var(--primary-color);"></i>
+                        Aaron <span style="color: var(--primary-color);">Taco V.</span>
+                    </h4>
+                    <p class="text-white opacity-50 small pe-lg-4">
+                        Ingeniero de Software en formación. Transformando ideas complejas en interfaces digitales
+                        elegantes y funcionales.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3 fw-bold" style="font-family: 'Orbitron', sans-serif;">Explorar</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li class="mb-2"><a href="index.html#sobre-mi" class="footer-link">Sobre mí</a></li>
+                        <li class="mb-2"><a href="pages/proyectos.html" class="footer-link">Portafolio</a></li>
+                        <li class="mb-2"><a href="pages/Contacto.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3 fw-bold" style="font-family: 'Orbitron', sans-serif;">Conectemos</h5>
+                    <div class="social-footer-links mb-3 justify-content-start">
+                        <a href="https://github.com/aront132" target="_blank" class="footer-icon"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/aaron-abel-taco-vargas-03340b28a" target="_blank" class="footer-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/992132014" target="_blank" class="footer-icon"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p class="text-white opacity-50 small">
+                        <i class="fas fa-envelope me-2 text-primary"></i> ataco813@mail.com
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary opacity-25">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white opacity-50 mb-0">
+                        &copy; 2025 Aaron Taco V. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-white opacity-50 small text-decoration-none">Volver arriba <i
+                            class="fas fa-arrow-up ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+
+</html>

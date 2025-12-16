@@ -1,0 +1,102 @@
+:root {
+    --primary-color: #bb29eb;
+    --bg-color: #05020a;
+}
+.neon-text {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color);
+}
+.navbar-brand{
+     font-family: 'Orbitron', sans-serif;
+}
+.navbar-glass {
+    background: rgba(5, 2, 10, 0.85) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(187, 41, 235, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.brand-icon {
+    filter: drop-shadow(0 0 5px gold);
+    animation: pulse-icon 2s infinite;
+}
+
+@keyframes pulse-icon {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.nav-link-neon {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px 10px !important;
+    transition: color 0.3s ease;
+}
+
+.small-icon {
+    font-size: 0.8rem;
+    margin-right: 5px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.nav-link-neon:hover,
+.nav-link-neon.active {
+    color: white !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.nav-link-neon:hover .small-icon,
+.nav-link-neon.active .small-icon {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+.nav-link-neon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-link-neon:hover::after,
+.nav-link-neon.active::after {
+    width: 80%;
+}
+
+.btn-neon-nav {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-neon-nav:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 0 15px var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: 2px solid var(--primary-color);
+}
